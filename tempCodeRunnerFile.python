@@ -1,0 +1,16 @@
+
+
+
+test_string = input("enter string")
+ 
+print("The original string is : ", test_string)
+ 
+# initializing punctuations string
+punchuations = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
+ 
+for elements in test_string:
+    if elements in punchuations:
+        test_string = test_string.replace(elements, "")
+ 
+# printing result
+print("The string after punctuation filter : ",test_string)
